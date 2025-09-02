@@ -2,10 +2,10 @@
   position: relative;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background: linear-gradient(135deg, #49629b, #000000);
   overflow: hidden;
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
   color: white;
 }
@@ -113,11 +113,69 @@
   font-style: normal;
 }
 
-.name {
-  position: relative;
-  top: 5rem;
+.subtitle {
   font-family: "Meow Script", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 9rem;
+  font-size: 4rem;
+  margin-bottom: -2rem;
+  justify-content: center;
+  display: flex;
+}
+
+.name {
+  position: relative;
+  font-family: "Meow Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 8rem;
+  justify-content: center;
+  display: flex;
+}
+
+.role {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2rem;
+  margin-top: 1rem;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.know-more-container {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+}
+
+.know-more-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid rgb(183, 0, 255);
+  margin: 0 auto;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+
+  50% {
+    transform: translate(-50%, -10px);
+  }
 }

@@ -38,13 +38,16 @@ export default function Hero() {
 
         <div className="content">
           <h1 className="welcome">Welcome</h1>
-          <p className="name">Tukaram <br /> Todkari</p>
+          <h2 className="subtitle">I'm</h2>
+          <p className="name">Tukaram Todkari</p>
+          <p className="role">MERN Stack Developer</p>
         </div>
-        <button
-          onClick={() => scrollToSection(1)}
-        >
-          Read More
-        </button>
+        <div className="know-more-container" onClick={() => scrollToSection(1)}>
+          <p className="know-more-text">Know More</p>
+          <div className="triangle"></div>
+        </div>
+
+
       </section>
       {/* About me page */}
       <section
