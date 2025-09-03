@@ -1,13 +1,13 @@
 import "./Hero.css";
 import { useRef } from "react"
 import GoogleFontLoader from "react-google-font-loader";
-import About from "./About";
-import Skills from "./Skills";
-import Education from "./education/Education";
-import Experience from "./experience/Experiance";
-import Projects from "./Projects";
-import Achievements from "./achievements/Achievements";
-import Contact from "./Contact";
+import About from "../about/About";
+import Skills from "../skills/Skills";
+import Education from "../education/Education";
+import Experience from "../experience/Experiance";
+import Projects from "../projects/Projects";
+import Achievements from "../achievements/Achievements";
+import Contact from "../contacts/Contact";
 
 export default function Hero() {
   const sectionRefs = [useRef(null), useRef(null), useRef(null)];

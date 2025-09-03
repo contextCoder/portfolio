@@ -1,9 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Hero from "./components/Hero";
-import Personal from "./components/Personal";
-
-
+import Hero from "./components/homePage/Hero";
 
 export default function App() {
   return (
