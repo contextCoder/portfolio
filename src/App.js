@@ -5,11 +5,9 @@ import Hero from "./components/homePage/Hero";
 export default function App() {
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Hero />} />
+      <Routes>
+        <Route path="/" element={<Hero />} />
       </Routes>
-    </Router>
     </>
   );
 }
